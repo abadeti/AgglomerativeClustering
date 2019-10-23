@@ -1,1 +1,16 @@
-# AgglomerativeClustering
+# LuvHacks using AgglomerativeClustering
+
+LUVHACKS
+
+College is a place to meet knew people with different backgrounds and perspectives, however, at such a small university, it feels almost difficult to see some knew faces around. Going into this project, we knew that we wanted to experiment with machine learning algorithms, specifically clustering, so we took that idea and ran with it.
+
+To create this compatibility calculator, we used Agglomerative Clustering that computes a similarity constant between all data points, using this unsupervised learning technique, and clusters them. We then visualized this data using dendrograms that model the process in which the clusters are formed. They follow these steps: 1) Each data point represents a singular cluster 2) By using linkage=complete, we compute the similarity values between all the different clusters 3) The clusters are then combined to clusters with high similarity coefficients We then created a website that shows our mission and results. And lastly, though much of this process is manual, from the downloading of the forms to moving the file into the same directory as the code to constantly updating the file with new entries, we tried to automate parts by incorporating a bot using pyautogui that will download the results from the google forms to a .csv file for you.
+
+The biggest challenge that we went through was trying to automate as much of the compatibility calculator as possible. We created the website in hopes of having a real-time output for which cluster an individual would fall into based on their immediate input and this proved to be quite the challenge. After we embedded the Google Form, we figured that the resulting data from the user's input would have to be saved into a Google Spreadsheet and then into a .csv file for the clustering algorithm's input. To do this we looked through Google's API and Excel's API with promising results, however, the lack of time caused us to look towards more time-efficient methods--such as creating a bot.
+
+We are really proud of the results derived from the clustering algorithm, from the clusters that were created to the visualizations it generated. Much of our testing data came from our friends and classmates, so it was interesting to see how the compatibility calculator compared to our real-life relationships. We are also really proud of our Bot. We struggled for hours trying to figure out how to automate as much of this project as possible and when we thought we'd have had exhausted all options, we considered just trying something outside of the scope of our working knowledge and discovered Pyautogui, an API that we all will be looking more into in the future.
+
+With all of us being in introductory computer science courses, this hackathon really showed us that the hardest part to any project was continuing to research solutions when you think that you have exhausted every possible avenue. We learned to enjoy the process of researching and trying things out and that made this hackathon a very memorable experience.
+
+LuvHacks has every intention of growing into the real-time and completely automated project that we all strived for since the inception of the idea. We hope to further explore Google's API and create a functional embedded google form that will automatically and programmatically generate a resulting .csv file that can call the python clustering script all within a website.
+
